@@ -1,0 +1,82 @@
+Traccia 1: Sistema di Prenotazione Appuntamenti
+
+ 
+
+Obiettivo:
+
+Sviluppare un programma Python per la gestione di un sistema di prenotazione appuntamenti per un salone di bellezza. 
+Il sistema deve utilizzare i principi OOP e gestire i dati attraverso file JSON, oltre a implementare i costrutti 
+condizionali e iterativi.
+
+Requisiti Specifici:
+
+Classi OOP:
+
+Cliente: rappresenta un cliente con attributi come nome, cognome, email e storico_appuntamenti.
+Appuntamento: gestisce i dettagli di un appuntamento, con data, ora, tipo_di_servizio, e cliente.
+Salone: tiene traccia di tutti gli appuntamenti e gestisce l'agenda.
+
+Gestione del File JSON:
+
+Storicizzare tutti i dati del sistema all’interno di un File JSON
+Leggere un file JSON all'avvio per caricare l'agenda.
+Salvare gli appuntamenti aggiornati in un file JSON alla chiusura.
+
+Funzionalità del Programma:
+
+Fornire un'interfaccia testuale per aggiungere, cancellare o modificare appuntamenti.
+Ricerca di appuntamenti per cliente o data.
+
+Versionamento con GIT:
+
+Seguire un workflow di GIT con commit frequenti e branch dedicati per le nuove funzionalità.
+Il programma deve essere ben commentato e strutturato secondo i principi di pulizia e chiarezza del codice. 
+Il versionamento dovrebbe riflettere uno sviluppo logico e incrementale del progetto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Traccia 2:
+
+Diario Alimentare Personale
+
+Obiettivo:
+
+Creare un programma Python che aiuti gli utenti a tenere traccia della loro dieta settimanale(Lun-Dom). 
+Il programma deve essere basato su OOP e deve utilizzare file JSON per la persistenza dei dati, oltre a includere 
+costrutti condizionali e iterativi.
+
+Requisiti Specifici:
+
+Classi OOP:
+
+Alimento: rappresenta un alimento con nome, calorie, proteine, carboidrati, e grassi.
+Pasto: gestisce un insieme di alimenti consumati in un singolo pasto.
+Diario: archivia e organizza i pasti giornalieri dell'utente.
+
+Gestione del File JSON:
+
+Caricare e salvare il diario alimentare in un file JSON, all’apertura e chiusura del programma.
+
+Funzionalità del Programma:
+
+Interfaccia testuale per inserire nuovi alimenti e pasti.
+Calcolare il totale giornaliero delle calorie.
+Visualizzare un riassunto settimanale dell'assunzione alimentare.
+
+Versionamento con GIT:
+
+Mantenere un registro delle modifiche attraverso GIT, con branch per le funzionalità e commit descrittivi.
+
+Il programma deve essere ben commentato e strutturato secondo i principi di pulizia e chiarezza del codice. 
+Il versionamento dovrebbe riflettere uno sviluppo logico e incrementale del progetto.
