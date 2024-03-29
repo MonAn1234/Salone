@@ -15,8 +15,10 @@ class Salone:
             print("FILE NON TROVATO")
 
     def saveUtente(self):
-        with open(self.locazioneFile) as fileJson:
-            json.dumps(self.utente, fileJson, indent=4)
+        stringaDaScrivere = self.getJSON()
+        if(len(stringaDaScrivere)>0):
+            with open(self.locazioneFile, "w+") as fileDaScrivere:
+                fileDaScrivere.write(json.dumps(stringaDaScrivere, indent=4))
 
     def aggUtente(self, appuntamento):
         self.utente.append(appuntamento)
@@ -33,5 +35,9 @@ class Salone:
             self.utente[posizione]=nuovoAppuntamento
         else:
             print("Questo appuntamento non esiste")
-
     
+    def getJSON(self):
+        risultato = []
+        for appuntamento in self.utente:
+            risultato.append({"nome":appuntamento.cliente.nome,"cognome":appuntamento.cliente.cognome,"email":appuntamento.cliente.email,"data":appuntamento.data,"ora":appuntamento.ora,"servizio":appuntamento.tipo_di_servizio})
+        return risultato
