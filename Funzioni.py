@@ -12,28 +12,35 @@ def main():
 
             salone= Salone("Utenti.json")
 
+            salone.caricaUtente()
 
             if scelta == '1':
-                a=input("Inserisci il nome: ")
-                b=input("Inserisci il cognome: ")
-                c=input("Inserisci il email: ")
-                d=input("Inserisci il la data: ")
-                e=input("Inserisci l'ora: ")
-                f=input("Inserisci il tipo di servizio: ")
+                Nome=input("Inserisci il nome: ")
+                Cognome=input("Inserisci il cognome: ")
+                Email=input("Inserisci il email: ")
+                Data=input("Inserisci il la data: ")
+                Ora=input("Inserisci l'ora: ")
+                Servizio=input("Inserisci il tipo di servizio: ")
 
-                cliente=Cliente(a,b,c)
-                appuntamento=Appuntamento(d,e,f,cliente)
+                cliente=Cliente(Nome,Cognome,Email)
+                appuntamento=Appuntamento(Data,Ora,Servizio,cliente)
 
                 salone.aggUtente(appuntamento)  
-                # cliente.aggAppuntamento(appuntamento)
                 salone.saveUtente()
 
             elif scelta == '2':
-                # Chiamata alla funzione per eliminare un appuntamento
-                pass  # Aggiungi il codice qui
+                Nome=input("Inserisci il nome: ")
+                Cognome=input("Inserisci il cognome: ")
+                Email=input("Inserisci il email: ")
+                Data=input("Inserisci il la data: ")
+                Ora=input("Inserisci l'ora: ")
+                Servizio=input("Inserisci il tipo di servizio: ")
 
+                cliente=Cliente(Nome,Cognome,Email)
+                appuntamento=Appuntamento(Data,Ora,Servizio,cliente)
+                salone.delUtente(appuntamento)         
             elif scelta == '3':
-                # Chiamata alla funzione per modificare un appuntamento
+                # Chiamata alla funzione per modifi\e un appuntamento
                 pass  # Aggiungi il codice qui
 
             elif scelta == '4':

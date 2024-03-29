@@ -1,10 +1,12 @@
 [
     {
-        "nome": "l",
-        "cognome": "l",
-        "email": "l",
-        "data": "l",
-        "ora": "l",
-        "servizio": "l"
+        "cliente": {
+            "nome": "fab",
+            "cognome": "fab",
+            "email": "fab"
+        },
+        "data": "fab",
+        "ora": "fab",
+        "tipo_di_servizio": "fab"
     }
 ]
