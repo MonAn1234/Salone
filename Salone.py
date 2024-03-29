@@ -10,14 +10,13 @@ class Salone:
     def caricaUtente(self):
         try:
             with open(self.locazioneFile, "r+") as a:
-                File=json.loads(a)
-                return(File)
+                return json.loads(a)
         except FileNotFoundError:
             print("FILE NON TROVATO")
 
     def saveUtente(self):
-            with open(self.locazioneFile, "r+") as a:
-                json.dumps(self.utente, a, indent=4)
+        with open(self.locazioneFile) as fileJson:
+            json.dumps(self.utente, fileJson, indent=4)
 
     def aggUtente(self, appuntamento):
         self.utente.append(appuntamento)
