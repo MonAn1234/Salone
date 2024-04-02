@@ -1,1 +1,2 @@
-    
+from Funzioni import *
+main()
